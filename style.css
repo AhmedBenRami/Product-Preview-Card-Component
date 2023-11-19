@@ -180,7 +180,7 @@ button:focus {
         height: 70px;
         border-radius: 50%;
         position: absolute;
-        top: 75%;
+        top: 80%;
         left: 25%;
         transform: translateX(-50%);
     }
@@ -195,8 +195,8 @@ button:focus {
         color: hsl(158, 36%, 37%);
         position: absolute;
         cursor: alias;
-        top: 79%;
-        left: 31%;
+        top: 84%;
+        left: 32%;
         z-index: 10;
         cursor: no-drop;
         opacity: .7;
