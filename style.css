@@ -30,7 +30,6 @@ body {
     background: white;
     width: 596px;
     height: 448px;
-    /* border: 1px solid; */
     display: grid;
     grid-template-columns: calc(300 / 596 * 100%) auto;
     grid-template-rows: 100%;
@@ -244,22 +243,44 @@ button:focus {
     }
 }
 
-/* @media (max-width: 200px) {
+@media (max-width: 250px) {
+    body {
+        height: 155vh;
+    }
+
     .container {
+        display: grid;
         width: 100%;
-        height: 250%;
-        grid-template-rows: 50% 50%;
+        height: 145vh;
+        grid-template-rows: calc((480 * 239 / 686) * 1px) auto;
+        grid-template-columns: 1fr;
+        border-radius: 0;
+        transform: translateY(-230px);
     }
 
     .container::before {
         content: "";
         background-image: url(images/image-product-mobile.jpg);
-        background-size: cover;
-        background-position: center center;
+        background-size: contain;
         background-repeat: no-repeat;
+        background-position: 0 99%;
         width: 100%;
-        height: 50%;
+        height: 100%;
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
     }
-} */
+
+    .description {
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        display: none;
+    }
+
+    .attribution {
+        position: absolute;
+        top: 146vh;
+    }
+}
